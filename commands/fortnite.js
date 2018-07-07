@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
     let kills = data.stats.lifetime[10]['Kills']
     let score = data.stats.lifetime[6]['Score']
     let matchesPlayed = data.stats.lifetime[7]['Matches Played']
-    let minutesPlayed = data.stats.lifetime[2]['Minutes Played']
+    let minutesPlayed = data.stats.lifetime[12]['Minutes Played']
     let wins = data.stats.lifetime[8]['Wins']
     let winPercent = data.stats.lifetime[9]['Win%']
     let KD = data.stats.lifetime[11]['K/d']
