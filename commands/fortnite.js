@@ -23,7 +23,7 @@ exports.run = async (client, message, args) => {
 
     const embed = new Discord.RichEmbed()
     .setAuthor(`${data.username}'s Fortnite stats on ${data.platform} | Lifetime Stats`)
-    .setThumbnail('https://cdn2.unrealengine.com/Fortnite%2Fsearch-for-survivors%2FsignupBanner-155x221-7d1f31411baf91e6cadf490c6f60f98a72b38b4c.png')
+    .setThumbnail('https://imgur.com/a/LnonW2G')
     .setColor('RANDOM')
     .addField('Kills', kills, true)
     .addField('Score', score, true)
