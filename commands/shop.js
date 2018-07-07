@@ -28,7 +28,7 @@ exports.run = async (client, message, args) =>{
             item = featured[i];
             embed = new Discord.RichEmbed();
             embed.setColor('RED')
-            embed.addField('Featured Item: ' + item.name, 'Price: ' + item.price + ' VBucks', 'Rarity: ' + item.rarity);
+            embed.addField('Featured Item: ' + item.name, 'Price: ' + item.price + ' VBucks', 'Rarity: ' + item.type);
             embed.setThumbnail(item.images.icon);
             embed.setFooter(`Developed by Marshall ` + ' | API by: fnbr.co')
             message.channel.send(embed);
@@ -37,7 +37,7 @@ exports.run = async (client, message, args) =>{
             item = daily[i];
             embed = new Discord.RichEmbed();
             embed.setColor('GREEN')
-            embed.addField('Daily Item: ' + item.name, 'Price: ' + item.price + ' VBucks', 'Rarity: ' + item.rarity);
+            embed.addField('Daily Item: ' + item.name, 'Price: ' + item.price + ' VBucks', 'Rarity: ' + item.type);
             embed.setThumbnail(item.images.icon);
             embed.setFooter(`Developed by Marshall ` + ' | API by: fnbr.co')
             message.channel.send(embed);
