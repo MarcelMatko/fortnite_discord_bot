@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
   if (!username) return message.reply('Please provide a username');
 
   const Fortnite = require('fortnite');
-  const fortnite = new Fortnite('7bfd6b4e-dcd4-4607-b99c-9a636aae9f28')
+  const fortnite = new Fortnite('81e84f99-070d-4343-ac2a-ff72f7fc380e')
 
  fortnite.user(username, platform).then(data => {
 
