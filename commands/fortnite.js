@@ -6,13 +6,13 @@ exports.run = async (client, message, args) => {
   let username = args[0];
   let platform = args[1] || "pc";
 
-  if (!username) return message.reply('You must supply a username');
+  if (!username) return message.reply('Please provide a username');
 
   const Fortnite = require('fortnite');
   const fortnite = new Fortnite('81e84f99-070d-4343-ac2a-ff72f7fc380e')
 
  fortnite.user(username, platform).then(data => {
-
+        console.log(data);
     let kills = data.stats.lifetime[10]['Kills']
     let score = data.stats.lifetime[6]['Score']
     let matchesPlayed = data.stats.lifetime[7]['Matches Played']
