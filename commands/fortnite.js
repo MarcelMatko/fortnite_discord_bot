@@ -23,7 +23,7 @@ exports.run = async (client, message, args) => {
 
     const embed = new Discord.RichEmbed()
     .setAuthor(`${data.username}'s Fortnite stats on ${data.platform} | Lifetime Stats`)
-    .setThumbnail('https://imgur.com/a/LnonW2G')
+    .setThumbnail('https://i.imgur.com/VRCdHUX.png')
     .setColor('RANDOM')
     .addField('Kills', kills, true)
     .addField('Score', score, true)
