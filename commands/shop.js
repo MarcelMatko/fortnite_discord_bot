@@ -4,7 +4,7 @@ const request = require('request');
 // Your token for fnbr - https://fnbr.co/api/docs
 const fnbr_token = '7bfd6b4e-dcd4-4607-b99c-9a636aae9f28';
 
-exports.run = async (client, message, args) =>{ 
+exports.run = async (client, message, args) =>{
     var options = {
         method: "GET",
         url: "https://fnbr.co/api/shop",
@@ -30,7 +30,7 @@ exports.run = async (client, message, args) =>{
             embed.setColor('RED')
             embed.addField('Featured Item: ' + item.name, 'Price: ' + item.price + ' VBucks');
             embed.setThumbnail(item.images.icon);
-            embed.setFooter(`Website: Developed by Marshall ` + ' | API by: fnbr.co')
+            embed.setFooter(`Developed by Marshall ` + ' | API by: fnbr.co')
             message.channel.send(embed);
         }
         for (i=0;i<daily.length;i++) {
@@ -39,7 +39,7 @@ exports.run = async (client, message, args) =>{
             embed.setColor('GREEN')
             embed.addField('Daily Item: ' + item.name, 'Price: ' + item.price + ' VBucks');
             embed.setThumbnail(item.images.icon);
-            embed.setFooter(`Website: Developed by Marshall ` + ' | API by: fnbr.co')
+            embed.setFooter(`Developed by Marshall ` + ' | API by: fnbr.co')
             message.channel.send(embed);
         }
     })
@@ -48,4 +48,3 @@ exports.run = async (client, message, args) =>{
 module.exports.help = {
   name: "shop"
 }
-
