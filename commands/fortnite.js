@@ -9,14 +9,14 @@ exports.run = async (client, message, args) => {
   if (!username) return message.reply('Please provide a username');
 
   const Fortnite = require('fortnite');
-  const fortnite = new Fortnite('81e84f99-070d-4343-ac2a-ff72f7fc380e')
+  const fortnite = new Fortnite('7bfd6b4e-dcd4-4607-b99c-9a636aae9f28')
 
  fortnite.user(username, platform).then(data => {
 
     let kills = data.stats.lifetime[10]['Kills']
     let score = data.stats.lifetime[6]['Score']
     let matchesPlayed = data.stats.lifetime[7]['Matches Played']
-    let minutesPlayed = data.stats.lifetime[4]['Minutes Played']
+    let minutesPlayed = data.stats.lifetime[5]['Minutes Played']
     let wins = data.stats.lifetime[8]['Wins']
     let winPercent = data.stats.lifetime[9]['Win%']
     let KD = data.stats.lifetime[11]['K/d']
