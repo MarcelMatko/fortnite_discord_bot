@@ -22,11 +22,10 @@ exports.run = async (client, message, args) => {
     let Top5s = data.stats.lifetime[1]['Top 5s']
 
     const embed = new Discord.RichEmbed()
-    .setTitle("Marshall's Fortnite Tracker", true)
     .setAuthor(`${data.username}'s Fortnite stats on ${data.platform}`)
     .setThumbnail('https://cdn2.unrealengine.com/Fortnite%2Fsearch-for-survivors%2FsignupBanner-155x221-7d1f31411baf91e6cadf490c6f60f98a72b38b4c.png')
     .addBlankField()
-    .addField("Solo Mode","Lifetime stats")
+    .addField("Solo Mode - Lifetime stats")
     .setColor('RANDOM')
     .addField('Kills', kills, true)
     .addField('Score', score, true)
